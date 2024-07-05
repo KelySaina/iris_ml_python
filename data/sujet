@@ -1,0 +1,9 @@
+Sujet 2 : IRIS
+Contexte 
+Le dataset des iris est un ensemble de données multivariées introduit par le statisticien et biologiste britannique Ronald Fisher dans son article de 1936 intitulé "L'utilisation de mesures multiples dans les problèmes taxonomiques". 
+Il est parfois appelé dataset des Iris d'Anderson car Edgar Anderson a collecté les données pour quantifier la variation morphologique des fleurs d'iris de trois espèces apparentées. 
+Le dataset se compose de 50 échantillons de chacune des trois espèces d'iris (Iris setosa, Iris virginica et Iris versicolor). 
+Quatre caractéristiques ont été mesurées pour chaque échantillon : la longueur et la largeur des sépales et des pétales, en centimètres.
+Ce dataset est devenu un cas d'essai typique pour de nombreuses techniques de classification statistique en apprentissage automatique, telles que les machines à vecteurs de support.
+Contenu Le dataset contient un ensemble de 150 enregistrements répartis sur 5 attributs : Longueur du pétale, Largeur du pétale, Longueur du sépale, Largeur du sépale et Classe (Espèce).
+Prédir la colonne species
