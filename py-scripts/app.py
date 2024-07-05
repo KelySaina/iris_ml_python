@@ -33,7 +33,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 st.title("Iris Species Prediction")
 
 # Dataset display
-st.write("### Iris Dataset")
+st.write("### Iris Sample Dataset")
 st.write(data.head())
 
 # Model selection
@@ -95,7 +95,7 @@ if model_name == "Linear Regression":
 else:
     st.write(f"### Data Visualization ({model_name})")
     # Add predictions to the dataset for visualization
-    data['predicted_species'] = model.predict(X)
+    data['predicted_species'] = le.inverse_transform(model.predict(X))
 
     # Scatter plot based on sepal measurements
     fig_sepal, ax_sepal = plt.subplots()
@@ -110,6 +110,7 @@ else:
                     hue='predicted_species', palette='viridis', ax=ax_petal)
     ax_petal.set_title('Petal Measurements')
     st.pyplot(fig_petal)
+
 
 # User input for predictions
 st.write("### Predict Iris Species")
